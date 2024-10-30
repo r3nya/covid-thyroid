@@ -13,7 +13,7 @@ export let onAnswer;
                 class="btn btn-outline btn-primary"
                 on:click={() => onAnswer('yes')}
         >
-            <CheckCircle2 class="w-5 h-5 mr-2" />
+            <CheckCircle2 class="w-5 h-5 mr-3" />
             Да
         </button>
         <button
