@@ -20,8 +20,8 @@ function handleAnswer(answer) {
 
 function restart() {
 	answers.forEach((_, index) => {
-      answers[index] = null;
-    });
+		answers[index] = null;
+	});
 	currentQuestion = 0;
 	showResult = false;
 }
