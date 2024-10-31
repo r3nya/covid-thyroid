@@ -1,29 +1,29 @@
 <script>
-import ProgressBar from "./components/ProgressBar.svelte";
-import QuestionCard from "./components/QuestionCard.svelte";
-import Result from "./components/Result.svelte";
+import ProgressBar from './components/ProgressBar.svelte';
+import QuestionCard from './components/QuestionCard.svelte';
+import Result from './components/Result.svelte';
 
-import { questions } from "./constants/questions";
+import { questions } from './constants/questions';
 
 const answers = $state(Array(questions.length).fill(null));
 let currentQuestion = $state(0);
 let showResult = $state(false);
 
 function handleAnswer(answer) {
-	answers[currentQuestion] = answer;
-	if (currentQuestion < questions.length - 1) {
-		currentQuestion++;
-	} else {
-		showResult = true;
-	}
+  answers[currentQuestion] = answer;
+  if (currentQuestion < questions.length - 1) {
+    currentQuestion++;
+  } else {
+    showResult = true;
+  }
 }
 
 function restart() {
-	answers.forEach((_, index) => {
-		answers[index] = null;
-	});
-	currentQuestion = 0;
-	showResult = false;
+  answers.forEach((_, index) => {
+    answers[index] = null;
+  });
+  currentQuestion = 0;
+  showResult = false;
 }
 </script>
 

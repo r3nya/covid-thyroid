@@ -1,5 +1,5 @@
 <script>
-import { getResult } from "../lib/utils";
+import { getResult } from '../lib/utils';
 
 export let answers;
 export let onRestart;

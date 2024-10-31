@@ -1,5 +1,5 @@
 <script>
-import { CheckCircle2, XCircle } from "lucide-svelte";
+import { CheckCircle2, XCircle } from 'lucide-svelte';
 
 export let question;
 export let onAnswer;
