@@ -8,8 +8,8 @@ export let total;
         Вопрос {current + 1} из {total}
     </h2>
     <progress
-            class="progress progress-primary w-full"
-            value={((current + 1) / total) * 100}
-            max="100"
+        class="progress progress-primary w-full"
+        value={((current + 1) / total) * 100}
+        max="100"
     ></progress>
 </div>

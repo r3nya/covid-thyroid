@@ -32,14 +32,14 @@ function restart() {
     <div class="card bg-base-100 shadow-xl">
       <div class="card-body">
         <h1 class="card-title text-2xl mb-6 text-center">
-          Опросник по оценке состояния щитовидной железы после COVID-19
+          Программа для определения показаний к динамическому тиреоидологическому обследованию больных, перенесших COVID-19
         </h1>
 
         {#if !showResult}
           <ProgressBar current={currentQuestion} total={questions.length} />
           <QuestionCard
-                  question={questions[currentQuestion]}
-                  onAnswer={handleAnswer}
+            question={questions[currentQuestion]}
+            onAnswer={handleAnswer}
           />
         {:else}
           <Result {answers} onRestart={restart} />
